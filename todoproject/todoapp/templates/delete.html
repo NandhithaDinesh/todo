@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+<div class="col-md-4">
+</div>
+<div class="col-md-4">
+     <div class="shadow card">
+         <div class="card-body">
+<form method="POST">
+    {% csrf_token %}
+    <p style="color:green;">Are you sure this task is done</p>
+    <input class="btn btn-success" type="submit" value="YES">
+</form>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+<div class="col-md-4">
+</div>
+{% endblock %}
